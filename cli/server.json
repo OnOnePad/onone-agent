@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "fun.onone/agent",
+  "title": "OnOne",
+  "description": "Launch and track coins on OnOne (Base, Solana): memes, stock-paired coins, agent wallets.",
+  "version": "0.3.2",
+  "websiteUrl": "https://onone.fun/agents",
+  "repository": { "url": "https://github.com/OnOnePad/onone-agent", "source": "github" },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@onone/agent",
+      "version": "0.3.2",
+      "transport": { "type": "stdio" },
+      "packageArguments": [{ "type": "positional", "value": "mcp" }],
+      "environmentVariables": [
+        { "name": "ONONE_API_KEY", "description": "OnOne agent API key (b1a_…) for launch tools", "isSecret": true, "isRequired": false },
+        { "name": "ONONE_PRIVATE_KEY", "description": "Agent wallet key, local only; needed to sign launches", "isSecret": true, "isRequired": false },
+        { "name": "ONONE_MCP_ALLOW_SEND", "description": "Set to 1 to let the server sign and send", "isRequired": false }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://onone.fun/api/mcp",
+      "headers": [{ "name": "Authorization", "description": "Bearer <agent API key>, only for launch tools", "isSecret": true, "isRequired": false }]
+    }
+  ]
+}

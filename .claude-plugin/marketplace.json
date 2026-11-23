@@ -1,0 +1,11 @@
+{
+  "name": "onone",
+  "owner": { "name": "OnOne", "url": "https://onone.fun" },
+  "plugins": [
+    {
+      "name": "onone",
+      "source": "./",
+      "description": "Launch and track coins on OnOne from Claude: memes, stock-paired coins and agent wallets on Base and Solana."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "onone": {
+      "type": "http",
+      "url": "https://onone.fun/api/mcp",
+      "headers": { "Authorization": "Bearer ${ONONE_API_KEY}" }
+    }
+  }
+}
