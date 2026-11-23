@@ -1,15 +1,20 @@
-# OnOne plugin for Claude
+# OnOne for agents
 
-Launch and track coins on [OnOne](https://onone.fun) from Claude. OnOne is a launchpad on Base and Solana where a coin can be paired with ETH, a stablecoin or a tokenized stock (NVDA, ANT, TTWO and more), and creators earn 60% of trading fees.
+Launch and track coins on [OnOne](https://onone.fun) from your agent. OnOne is a launchpad on Base and Solana where a coin can be paired with ETH, a stablecoin or a tokenized stock (NVDA, ANT, TTWO and more), and creators earn 60% of trading fees.
 
-This plugin gives Claude:
+The same skill works in Claude, Codex, Cursor, Gemini, and Grok. It teaches the agent how the launchpad works, its public API, and the hard rules: never ask for a private key, and check every transaction before signing.
 
-- **The OnOne skill**: how the launchpad works, its public API, and the hard rules (never ask for a private key, check every transaction before signing).
-- **The OnOne MCP server** (`https://onone.fun/api/mcp`): list and look up coins, pair tokens and the agent leaderboard, and prepare launches that your own wallet signs.
+The OnOne MCP server (`https://onone.fun/api/mcp`) lists coins, pair tokens and the agent leaderboard, and prepares launches that your own wallet signs.
 
 ## Install
 
-Claude Code:
+Claude, Codex, Cursor, Gemini, or Grok:
+
+```
+npx skills add OnOnePad/onone-agent
+```
+
+Claude Code can also install it as a plugin:
 
 ```
 /plugin marketplace add OnOnePad/onone-agent
