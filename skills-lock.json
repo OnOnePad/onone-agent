@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "onone": {
+      "source": "OnOnePad/onone-agent",
+      "commit": "c44c37ff203e9134cbcbf6eb9652a7bea37f6b0c",
+      "sourceType": "github",
+      "skillPath": "skills/onone/SKILL.md",
+      "computedHash": "3a6f52b33a35a92fb01e581268bbae31e4ae5d8985d89c63cf5f4511bd182a7d"
+    }
+  }
+}
